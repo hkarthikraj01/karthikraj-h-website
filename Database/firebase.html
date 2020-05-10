@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Karthikraj h || Friebase Connection Insert and fetch the data in table format</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/ico" href="../CodeRepublics-logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="HTML Tutorial: HTML is a markup language i.e. it is a way for the computers to communicate with each other.. used to design web pages using html tags.. html5 website..">
+
+<meta name="keywords" content="html,html tutorial,learn html,html editor,html code,source code,html color,html5,html full form,learn to code,how to code">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta property="og:url"              content="https://www.coderepublics.com/HTML/html-tutorial.php" />
+<meta property="og:type"             content="article" />
+<meta property="og:title"            content="Html Tutorial for Beginners - Learn html Online Courses | Start Coding Today" />
+<meta property="og:description"        content="HTML Tutorial: HTML is a markup language i.e. it is a way for the computers to communicate with each other.. used to design web pages using html tags.. html5 website.." />
+
+<meta property="og:image"             content="../assets/Thumbnail/CodeRepublics-html.jpg" />
+<meta property="og:locale"         content="en_US" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="canonical" href="https://www.coderepublics.com/HTML/html-tutorial.php" />
+
+<meta name="twitter:title" property="og:title" content="Html Tutorial for Beginners - Learn html Online Courses | Start Coding Today" />
+<meta name="twitter:description" property="og:description" content="HTML Tutorial: HTML is a markup language i.e. it is a way for the computers to communicate with each other.. used to design web pages using html tags.. html5 website.." />
+<meta property="og:site_name" content="www.coderepublics.com" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:image" content="assets/img/CodeRepublics.jpg">
+<meta name="twitter:site" content="@coderepublics">
+<meta name="twitter:domain" content="www.coderepublics.com"/>
+<meta name="twitter:creator" content="@coderepublics"/>
+
+    <!--Adsense-->
+
+
+<!-- Adsense Auto Ads-->
+
+
+<!--AMP Start-->
+
+<!--AMP End-->
+<!--Adsense-->    <meta name="Description" content="Karthikraj h is an educational website provide website design and development tutorials like HTML, CSS, JavaScript, jquery, PHP, SEO, SQL, XML, bootstrap, web, Java, source code, color, bootsnipp etc.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML, CSS, JavaScript, jquery, KARTHIKRAJ H, hkarthikraj01, karthikraj, PHP, SQL, XML, bootstrap 4, SEO,Java, source code,color,web,python,c">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta property="og:url"                content="https://www.hkarthikraj01.tk/" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="Karthikraj h Online Web Development Tutorials " />
+<meta property="og:description"        content="Karthikraj h is an educational website provide website design and development tutorials like HTML, CSS, JavaScript, jquery, PHP, SEO, SQL, XML, bootstrap, web, Java, source code, color, bootsnipp etc." />
+
+<meta property="og:locale"         content="en_IN" />
+<link rel="canonical" href="https://www.hkarthikraj01.tk/" />
+<meta name="classification" content="Learn free online Tutorials" />
+<meta name="copyright" content="hkarthikraj01, www.hkarthikraj01.tk" />
+<meta name="Language" content="English, Tamil" />
+<meta name="Designer" content="Karthikraj h" />
+<meta name="Publisher" content="Karthikraj h" />
+<meta name="distribution" content="Global" />
+<meta name="city" content="Combatore" />
+<meta name="country" content="India" />
+<meta name="rating" content="Educational" />
+<meta name="twitter:title" property="og:title" content="CodeRepublics Online Web Development Tutorials" />
+<meta name="twitter:description" property="og:description" content="Karthikraj h is an educational website provide website design and development tutorials like HTML, CSS, JavaScript, jquery, PHP, SEO, SQL, XML, bootstrap, web, Java, source code, color,bootsnipp etc." />
+<meta property="og:site_name" content="www.coderepublics.com" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:image" content="assets/img/coming-soon/hKarthikraj01.jpg">
+<meta name="twitter:site" content="@hKarthikraj01">
+<meta name="twitter:domain" content="www.hKarthikraj01.tk"/>
+<meta name="twitter:creator" content="@hKarthikraj01"/>
+
+  <!-- Favicons -->
+<link rel="icon" type="image/ico" href="hKarthikraj01.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://www.coderepublics.com/assets/css/style.css" rel="stylesheet">
+  <link href="https://www.coderepublics.com/assets/font.css" rel="stylesheet"/>
+</head>
+ <link rel="stylesheet" href="https://www.coderepublics.com/assets/newstyle.css" />
+
+    
+</head>
+
+    <body>
+<nav class="mob navbar-default navbar-fixed-top" style="background:#009688;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="toggle-menu" href="#"><i class="fa fa-bars" id="toggle-css"></i></a>          
+      <a class="navbar-brand head-style" href="#" id="navbar-domain"><span class="codes"> hkarthikraj01</span></a>
+    </div>
+    
+
+    <div>
+      <ul class="nav navbar-nav navbar-right social-icons">
+                <li><a href="#" alt="HKarthikraj01 Facebook" target="_blank" rel="nofollow"><i class="fab fa-facebook-square"></i></a></li>        
+                <li><a href="#" alt="HKarthikraj01 Twitter" target="_blank" rel="nofollow"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#" alt="HKarthikraj01 Instagram" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" alt="HKarthikraj01 LinkedIn" target="_blank" rel="nofollow"><i class="fab fa-linkedin"></i></a></li>                
+            </ul>
+          
+    </div>
+  </div>
+</nav>
+<style>/*Header Header*/
+body{padding-top:50px; line-height:2 !important;}#navbar-domain{color:white;font-size:30px;font-weight: 500;}#toggle-css{position:relative;float:left;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px;font-size:25px;color:white;padding-top:10px}.mobilesearch{color:white;font-size:20px!important;border:0;padding:6px 5px 0 0}.toggle:focus,.navbar-default .navbar-toggle:hover{background-color:transparent}.navbar-toggle{margin-top:3px!important}.social-icons a i{font-size:20px;color:white!important}.head-style{font-family:400 17px / 1.5 "Roboto",sans-serif;font-size:20px}.searchbar{float:left;width:50%!important}.logo-color{color:}.gsib_b{display:none!important}#gsc-i-id1::-webkit-input-placeholder{color:gray}#gsc-i-id1:-ms-input-placeholder{color:gray}#gsc-i-id1::-moz-placeholder{color:gray;opacity:1}input.gsc-input{font-size:16px;padding:6px!important;color:black!important;text-align:left;// ADDED border:1px solid #3c763d;width:99%;border-radius:3px}.gsib_a{width:100%;padding:0 6px 3px}.gsib_a{padding-right:8px;padding-left:8px;padding-top:0!important}#gsc-i-id1:-moz-placeholder{color:#3c763d;opacity:1}.gsc-control-cse,#gsc-iw-id1{background-color:transparent!important;border:transparent!important}#search-box{width:400px;height:33px;margin:0 auto;background-color:#038860;padding:3px 4px;border:2px solid #FFF;box-shadow:0 0 0 2px #038860;border-radius:40px}button.gsc-search-button{background-color:#ebebeb!important;border-color:transparent;border-bottom-right-radius:3px!important;border-top-right-radius:3px!important;padding:10.5px;padding-left:10px;width:50px;margin:-3px 0 0 0!important}#gsc-i-id1{color:#FFF}table.gsc-search-box{border-style:none;border-width:0;border-spacing:0;width:100%;margin-bottom:-14px;margin-top:-2px}.gsc-search-box-tools .gsc-search-box .gsc-input{margin-left:25px}.gsc-search-button-v2 svg{fill:black}@media only screen and (max-width:1100px){.social-icons{display:none}}@media only screen and (max-width:767px){.searchbar{width:100%!important;float:left;overflow:hidden}.navbar-collapse.in{overflow:hidden!important}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#3c763d}}@media only screen and (max-width:500px){button.gsc-search-button{background-color:#ebebeb!important;border-color:gray!important;border-radius:3px!important;padding:11.5px!important;padding-left:10px;width:50px;margin:-2px 0 0 -10px!important;border-color:#3c763d!important}.navbar-brand{height:0!important;padding-top:0!important}.head-style{margin-top:-5px;margin-left:10px;font-size:25px!important}#toggle-css{padding-top:5px}}@media only screen and (max-width:767px){window.onload=function(){var searchBox=document.getElementById("gsc-i-id1");searchBox.placeholder="Search Torpics";searchBox.title="CodeRepublics"}}@media only screen and (max-width:1366px){#toggle-menu{display:none}}@media only screen and (max-width:1100px){#toggle-menu{display:block}#toggle-css{padding-top:0px;}@media only screen and (max-width:500px){.mob{padding:7px}}@media only screen and (max-width:400px){.codes{font-size:25px!important;margin-left:40px;}}.codes{font-family:400 17px / 1.5 "Roboto",sans-serif;font-weight: 500;font-size:30px}code{color:#0000ff !important;font: 400 17px / 1.5 "Roboto",sans-serif; font-family:padding: 0px;font-size: 16px;background-color: white;border-radius: 0px;font-weight: 500;}</style>      <style>
+     .content{
+  background: #dddddd36;
+    border: 1px solid lightgray;
+    border-radius: 0px;
+    padding: 15px;
+    border-left: 5px solid #8e78fd;
+}
+.content li{
+  color: blueviolet;
+    font-weight: 500;
+    list-style-type: none!important;
+}
+ </style>
+  <!--<div class="menu"  data-spy="affix" data-offset-top="50" id="nav1">-->
+      <div class="menu">
+      <div class="nav-size wrapper">
+        <!--<a id="abcd"><i class="fa fa-bars" style="font-size:25px; color:#23384e;"></i></a>--> 
+          <a href="index.html" title="Home Page">HOME</a>
+          <a href="Database/firebase.html" title="Firebase Tutorial">Database</a>            
+    </div>        
+  </div>
+          
+
+<style type="text/css">
+	.fix-share {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding:10px;
+  width: 200px;
+  z-index: 11;
+}
+.fb_animate{
+    margin:75px 0px;
+}
+.fb_iframe_widget{
+    margin-top: 5px;
+}
+</style>
+          <style>
+              /*Nav*/
+.menu{background-color:#fff;box-shadow:0 1px 1px rgba(0,0,0,.15);position:relative;z-index:9;padding-top:0;word-spacing:0}.menu a{color:#000000c7;font-family:400 17px / 1.5 "Roboto",sans-serif;display:inline-block;padding:0 15px;text-decoration:none;font-size:14px;font-weight:600;height:45px;line-height:50px}.menu a:hover{color:#414141}.menu a.tryit-link{float:right;margin-right:50px;display:inline-block;border-radius:30px;line-height:28px;position:relative;height:auto;top:9px;padding:0 12px;color:#c32929;border:1px double #c32929}.sticky{position:fixed;top:0;width:100%}.nav-size{padding-top:5px}@media only screen and (max-width:1100px){.nav-size{padding-top:0}}
+.gsc-search-box-tools .gsc-search-box .gsc-input{ line-height: 1.5 !important; }
+          </style>
+    
+        <div class="container-fluid">
+            <div class="row row-color">
+               <div class="col-md-2">
+    
+ <div class="list-group abc def list-border"> 
+   <span class="list-group-item"><div class="side-heading">DATA BASE Tutorial</div></span>
+  <a href="firebase.html" class="list-group-item list-group-item-action">Firebase Connection</a>   
+  
+</div>               </div>
+
+
+    <div class="col-md-8 col-sm-8">
+    
+
+     
+    <hr>
+
+  <h1 class="h1-size">Connect the Website to Firebase Realtime Database</h1> 
+
+  
+<h4 class="output"><b>Firebase Connection<br> <br>Source Code :<br> </h4>
+    <h4><b>HTML File</h4>
+</b>
+
+      <div class="panel" id="panelbg">
+        <div class="panel-tryit">
+            <span target="_blank" class="tryit">Save as -></span>
+            <a target="_blank"  class="try-btn" >index.html <span>»</span></a>
+        </div>
+    
+        <div class="panel-heading non-overflow-div"><br />
+           <div class="htmlHigh notranslate example-line-height">
+            &lt;html&gt;<br />
+            &lt;head&gt;<br />
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;<br />
+            &lt;/head&gt;<br />
+            &lt;body&gt;<br />
+        
+            &lt;br&gt;<br />
+            &lt;br&gt;<br />
+            &lt;div class=&quot;alert&quot;&gt;Your message has been sent&lt;/div&gt;<br />
+        &lt;form id=&quot;myForm&quot;&gt;<br />
+          &lt;h1&gt;Insert Data IN Firebase&lt;/h1&gt;<br />
+          &lt;ul class=&quot;myList&quot;&gt;<br />
+            &lt;li&gt;<br />
+              &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;&lt;/br&gt;<br />
+              &lt;input type=&quot;text&quot; placeholder=&quot;Name&quot; id=&quot;name&quot; required&gt;<br />
+            &lt;/li&gt;<br />
+            &lt;li&gt;<br />
+              &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;&lt;/br&gt;<br />
+              &lt;input type=&quot;text&quot; placeholder=&quot;Email&quot; id=&quot;email&quot; required&gt;<br />
+            &lt;/li&gt;<br />
+            &lt;li&gt;<br />
+              &lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;&lt;/br&gt;<br />
+              &lt;textarea placeholder=&quot;Messages&quot; id=&quot;message&quot; required&gt;&lt;/textarea&gt;<br />
+            &lt;/li&gt;<br />
+            &lt;li&gt;<br />
+              &lt;input type=&quot;submit&quot; id=&quot;submit&quot; /&gt;<br />
+            &lt;/li&gt;<br />
+        &lt;/form&gt;<br />
+        &lt;script src=&quot;https://www.gstatic.com/firebasejs/4.9.0/firebase.js&quot;&gt;&lt;/script&gt;<br />
+        &lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;<br />
+        &lt;/body&gt;<br />
+        &lt;/html&gt;<br />
+
+</div>        </div>
+    </div>
+    <h4><b>JavaScript File</h4>
+    </b>
+    <div class="panel" id="panelbg">
+        <div class="panel-tryit">
+            <span target="_blank" class="tryit">Save as -></span>
+            <a target="_blank"  class="try-btn" >main.js <span>»</span></a>
+        </div>
+    
+        <div class="panel-heading non-overflow-div"><br />
+           <div class="htmlHigh notranslate example-line-height">
+            var firebaseConfig = {<br />
+                apiKey: &quot;AIzaSyA-********y-VQ&quot;,<br />
+                authDomain: &quot;contact-********.firebaseapp.com&quot;,<br />
+                databaseURL: &quot;https://contact-********.firebaseio.com&quot;<br />,
+                projectId: &quot;contact-form-********&quot;,<br />
+                storageBucket: &quot;contact-form-********.appspot.com&quot;,<br />
+                messagingSenderId: &qu********&quot;,<br />
+                appId: &quot;1:56********8:web:5a8059fb********1d&quot;<br />
+              };<br />
+              // Initialize Firebase<br />
+              firebase.initializeApp(firebaseConfig);<br />
+            <br />
+            // Reference messages collection<br />
+            var messagesRef = firebase.database().ref('messages');<br />
+            <br />
+            // Listen for form submit<br />
+            document.getElementById('myForm').addEventListener('submit', submitForm);<br />
+            <br />
+            // Submit form<br />
+            function submitForm(e){<br />
+              e.preventDefault();<br />
+            <br />
+              // Get values<br />
+              var name = getInputVal('name');<br />
+              var email = getInputVal('email');<br />
+              var message = getInputVal('message');<br />
+            <br />
+              // Save message<br />
+              saveMessage(name, email, message);<br />
+            <br />
+              // Show alert<br />
+              document.querySelector('.alert').style.display = 'block';<br />
+            <br />
+              // Hide alert after 3 seconds<br />
+              setTimeout(function(){<br />
+                document.querySelector('.alert').style.display = 'none';<br />
+              },3000);<br />
+            <br />
+              // Clear form<br />
+              document.getElementById('myForm').reset();<br />
+            }<br />
+            <br />
+            // Function to get get form values<br />
+            function getInputVal(id){<br />
+              return document.getElementById(id).value;<br />
+            }<br />
+            <br />
+            // Save message to firebase<br />
+            function saveMessage(name, email, message){<br />
+              var newMessageRef = messagesRef.push();<br />
+              newMessageRef.set({<br />
+                name: name,<br />
+                email:email,<br />
+                message:message<br />
+              });<br />
+            }<br />
+</div>        </div>
+    </div>
+
+
+    <h4><b>CSS File</h4>
+    </b>
+    <div class="panel" id="panelbg">
+        <div class="panel-tryit">
+            <span target="_blank" class="tryit">Save as -></span>
+            <a target="_blank"  class="try-btn" >style.css <span>»</span></a>
+        </div>
+    
+        <div class="panel-heading non-overflow-div"><br />
+           <div class="htmlHigh notranslate example-line-height">
+            html body {<br />
+                background:url(&quot;https://picsum.photos/2500/1500?image=1041&quot;) no-repeat center center fixed;<br />
+                 -webkit-background-size:cover;<br />
+                 -moz-background-size:cover;<br />
+                 -o-background-size:cover;<br />
+                 background-size:cover;<br />
+           }<br />
+           <br />
+           #myForm {<br />
+             background: rgba(255,255,255,.2);<br />
+             border: 1px solid #242424;<br />
+             border-radius: 10px;<br />
+             max-width: 400px;<br />
+             -webkit-box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);<br />
+             -moz-box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);<br />
+             box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);<br />
+             font-family: 'Open Sans', sans-serif;<br />
+             color: #fff;<br />
+             margin: 0 auto;<br />
+           }<br />
+           <br />
+           .myList li {<br />
+             list-style: none;<br />
+             padding: 2% 0;<br />
+             margin: 0 -10px;<br />
+           }<br />
+           <br />
+           h1 {<br />
+             font-size: 2em;<br />
+             text-align: center;<br />
+           }<br />
+           #name, #email, #message {<br />
+             background: rgba(0,0,0,.2);<br />
+             width: 340px;<br />
+             height: 30px;<br />
+             -webkit-box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);<br />
+             -moz-box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);<br />
+             box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);<br />
+             border: 1px solid #fff;<br />
+             border-radius: 3px;<br />
+           }<br />
+           <br />
+           ::-webkit-input-placeholder {<br />
+             font-family: 'Open Sans', sans-serif;<br />
+             padding-left: 5px;<br />
+             color: #fff;<br />
+           }<br />
+           <br />
+           :-moz-placeholder { <br />
+             font-family: 'Open Sans', sans-serif;<br />
+             padding-left: 5px;<br />
+             color: #fff;<br />
+           }<br />
+           <br />
+           ::-moz-placeholder {<br />
+             font-family: 'Open Sans', sans-serif;  <br />
+             padding-left: 5px;<br />
+             color: #fff;<br />
+           }<br />
+           <br />
+           :-ms-input-placeholder { <br />
+             font-family: 'Open Sans', sans-serif;<br />
+             padding-left: 5px;<br />
+             color: #fff;<br />
+           }<br />
+           <br />
+           #message {<br />
+             width: 338px;<br />
+             height: 100px;<br />
+           }<br />
+           <br />
+           #submit {<br />
+             width: 343px;<br />
+             height: 40px;<br />
+           }<br />
+           <br />
+           label {<br />
+             font-weight: bold;<br />
+           }<br />
+</div>        </div>
+    </div>
+
+
+    <h4 class="output">Output</h4>  
+    <div class="panel" id="panelbg">
+    <div class="panel-tryit">
+        <span target="_blank" class="tryit" href="/Demo/Friebase demo/form.html">Demo -></span>
+        <a target="_blank" href="firebase.zip" class="try-btn download" >Download File<span>»</span></a>
+    </div>
+           <!DOCTYPE html> 
+<html lang="en">
+<HTML> 
+<head> 
+<title> Page Title </title> 
+</head> 
+<body> 
+
+<img src="form.png" alt="output"> 
+
+</body> 
+</html>          </div> 
+       
+       <h4 class="output"<b>See the video  How to implement in Your Site</b></h4>  
+       <div class="panel" id="panelbg">
+        <div class="panel-tryit">
+            <span target="_blank" class="tryit">View -></span>
+            <a target="_blank"  class="try-btn"  href="https://www.youtube.com/channel/UCFq6XEGMC7PQhhY4otuBvYw">YoutTube <span>»</span></a>
+        </div>
+    
+        <div class="panel-heading non-overflow-div"><br />
+           <div class="htmlHigh notranslate example-line-height">
+           
+            <iframe width="700" height="500" src="https://www.youtube.com/embed/NzfRYwW25xI">
+            </iframe>
+            <script src="https://apis.google.com/js/platform.js"></script>
+
+            <div class="g-ytsubscribe" data-channelid="UCFq6XEGMC7PQhhY4otuBvYw" data-layout="full" data-count="hidden"></div>
+            </div>
+            </div>
+            </div>
+    <hr>
+
+    <ul class="pager">
+        <li class="previous"><a href="https://www.hkarthikraj01.tk"><span class=" pager-color">Home</span></a></li>
+        <li class="next"><a href="#"><span class=" pager-color">Next</span></a></li>
+    </ul>
+    </div>
+
+<h1> Ads Banner</h1>
+   </body>
+</html>

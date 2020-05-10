@@ -1,0 +1,83 @@
+html body {
+	 background:url("https://picsum.photos/2500/1500?image=1041") no-repeat center center fixed;
+	  -webkit-background-size:cover;
+  	-moz-background-size:cover;
+  	-o-background-size:cover;
+  	background-size:cover;
+}
+
+#myForm {
+  background: rgba(255,255,255,.2);
+  border: 1px solid #242424;
+  border-radius: 10px;
+  max-width: 400px;
+  -webkit-box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);
+  -moz-box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);
+  box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.myList li {
+  list-style: none;
+  padding: 2% 0;
+  margin: 0 -10px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#name, #email, #message {
+  background: rgba(0,0,0,.2);
+  width: 340px;
+  height: 30px;
+  -webkit-box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);
+  -moz-box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);
+  box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 5px;
+  color: #fff;
+}
+
+:-moz-placeholder { 
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 5px;
+  color: #fff;
+}
+
+::-moz-placeholder {
+  font-family: 'Open Sans', sans-serif;  
+  padding-left: 5px;
+  color: #fff;
+}
+
+:-ms-input-placeholder { 
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 5px;
+  color: #fff;
+}
+
+#message {
+  width: 338px;
+  height: 100px;
+}
+
+#submit {
+  width: 343px;
+  height: 40px;
+}
+
+
+
+label {
+  font-weight: bold;
+}
+

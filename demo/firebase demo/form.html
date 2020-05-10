@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <br>
+    <br>
+    <script src="https://apis.google.com/js/platform.js"></script>
+
+ 
+    <div class="alert">Your message has been sent</div>
+<form id="myForm">
+  <h1>Insert Data IN Firebase</h1>
+  <ul class="myList">
+    <li>
+      <label for="name">Name:</label></br>
+      <input type="text" placeholder="Name" id="name" required>
+    </li>
+    <li>
+      <label for="email">Email:</label></br>
+      <input type="text" placeholder="Email" id="email" required>
+    </li>
+    <li>
+      <label for="message">Message:</label></br>
+      <textarea placeholder="Messages" id="message" required></textarea>
+    </li>
+    <li>
+      <input type="submit" id="submit" />
+    </li>
+</form>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
