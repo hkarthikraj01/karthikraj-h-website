@@ -197,38 +197,37 @@ body{padding-top:50px; line-height:2 !important;}#navbar-domain{color:white;font
     
         <div class="panel-heading non-overflow-div"><br />
            <div class="htmlHigh notranslate example-line-height">
-            &lt;html&gt;<br />
-            &lt;head&gt;<br />
-                &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;<br />
-            &lt;/head&gt;<br />
-            &lt;body&gt;<br />
-        
-            &lt;br&gt;<br />
-            &lt;br&gt;<br />
-            &lt;div class=&quot;alert&quot;&gt;Your message has been sent&lt;/div&gt;<br />
-        &lt;form id=&quot;myForm&quot;&gt;<br />
-          &lt;h1&gt;Insert Data IN Firebase&lt;/h1&gt;<br />
-          &lt;ul class=&quot;myList&quot;&gt;<br />
-            &lt;li&gt;<br />
-              &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;&lt;/br&gt;<br />
-              &lt;input type=&quot;text&quot; placeholder=&quot;Name&quot; id=&quot;name&quot; required&gt;<br />
-            &lt;/li&gt;<br />
-            &lt;li&gt;<br />
-              &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;&lt;/br&gt;<br />
-              &lt;input type=&quot;text&quot; placeholder=&quot;Email&quot; id=&quot;email&quot; required&gt;<br />
-            &lt;/li&gt;<br />
-            &lt;li&gt;<br />
-              &lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;&lt;/br&gt;<br />
-              &lt;textarea placeholder=&quot;Messages&quot; id=&quot;message&quot; required&gt;&lt;/textarea&gt;<br />
-            &lt;/li&gt;<br />
-            &lt;li&gt;<br />
-              &lt;input type=&quot;submit&quot; id=&quot;submit&quot; /&gt;<br />
-            &lt;/li&gt;<br />
-        &lt;/form&gt;<br />
-        &lt;script src=&quot;https://www.gstatic.com/firebasejs/4.9.0/firebase.js&quot;&gt;&lt;/script&gt;<br />
-        &lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;<br />
-        &lt;/body&gt;<br />
-        &lt;/html&gt;<br />
+&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;div class=&quot;alert&quot;&gt;Your message has been sent&lt;/div&gt;<br />
+&lt;form id=&quot;myForm&quot;&gt;<br />
+&lt;h1&gt;Insert Data IN Firebase&lt;/h1&gt;<br />
+&lt;ul class=&quot;myList&quot;&gt;<br />
+&lt;li&gt;<br />
+&lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;&lt;/br&gt;<br />
+&lt;input type=&quot;text&quot; placeholder=&quot;Name&quot; id=&quot;name&quot; required&gt;<br />
+&lt;/li&gt;<br />
+&lt;li&gt;<br />
+&lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;&lt;/br&gt;<br />
+&lt;input type=&quot;text&quot; placeholder=&quot;Email&quot; id=&quot;email&quot; required&gt;<br />
+&lt;/li&gt;<br />
+&lt;li&gt;<br />
+&lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;&lt;/br&gt;<br />
+&lt;textarea placeholder=&quot;Messages&quot; id=&quot;message&quot; required&gt;&lt;/textarea&gt;<br />
+&lt;/li&gt;<br />
+&lt;li&gt;<br />
+&lt;input type=&quot;submit&quot; id=&quot;submit&quot; /&gt;<br />
+&lt;/li&gt;<br />
+&lt;/form&gt;<br />
+&lt;script src=&quot;https://www.gstatic.com/firebasejs/4.9.0/firebase.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />
 
 </div>        </div>
     </div>
@@ -242,62 +241,62 @@ body{padding-top:50px; line-height:2 !important;}#navbar-domain{color:white;font
     
         <div class="panel-heading non-overflow-div"><br />
            <div class="htmlHigh notranslate example-line-height">
-            var firebaseConfig = {<br />
-                apiKey: &quot;AIzaSyA-********y-VQ&quot;,<br />
-                authDomain: &quot;contact-********.firebaseapp.com&quot;,<br />
-                databaseURL: &quot;https://contact-********.firebaseio.com&quot;<br />,
-                projectId: &quot;contact-form-********&quot;,<br />
-                storageBucket: &quot;contact-form-********.appspot.com&quot;,<br />
-                messagingSenderId: &qu********&quot;,<br />
-                appId: &quot;1:56********8:web:5a8059fb********1d&quot;<br />
-              };<br />
-              // Initialize Firebase<br />
-              firebase.initializeApp(firebaseConfig);<br />
-            <br />
-            // Reference messages collection<br />
-            var messagesRef = firebase.database().ref('messages');<br />
-            <br />
-            // Listen for form submit<br />
-            document.getElementById('myForm').addEventListener('submit', submitForm);<br />
-            <br />
-            // Submit form<br />
-            function submitForm(e){<br />
-              e.preventDefault();<br />
-            <br />
-              // Get values<br />
-              var name = getInputVal('name');<br />
-              var email = getInputVal('email');<br />
-              var message = getInputVal('message');<br />
-            <br />
-              // Save message<br />
-              saveMessage(name, email, message);<br />
-            <br />
-              // Show alert<br />
-              document.querySelector('.alert').style.display = 'block';<br />
-            <br />
-              // Hide alert after 3 seconds<br />
-              setTimeout(function(){<br />
-                document.querySelector('.alert').style.display = 'none';<br />
-              },3000);<br />
-            <br />
-              // Clear form<br />
-              document.getElementById('myForm').reset();<br />
-            }<br />
-            <br />
-            // Function to get get form values<br />
-            function getInputVal(id){<br />
-              return document.getElementById(id).value;<br />
-            }<br />
-            <br />
-            // Save message to firebase<br />
-            function saveMessage(name, email, message){<br />
-              var newMessageRef = messagesRef.push();<br />
-              newMessageRef.set({<br />
-                name: name,<br />
-                email:email,<br />
-                message:message<br />
-              });<br />
-            }<br />
+var firebaseConfig = {<br />
+apiKey: &quot;AIzaSyA-********y-VQ&quot;,<br />
+authDomain: &quot;contact-********.firebaseapp.com&quot;,<br />
+databaseURL: &quot;https://contact-********.firebaseio.com&quot;<br />,
+projectId: &quot;contact-form-********&quot;,<br />
+storageBucket: &quot;contact-form-********.appspot.com&quot;,<br />
+messagingSenderId: &qu********&quot;,<br />
+appId: &quot;1:56********8:web:5a8059fb********1d&quot;<br />
+};<br />
+// Initialize Firebase<br />
+firebase.initializeApp(firebaseConfig);<br />
+<br />
+// Reference messages collection<br />
+var messagesRef = firebase.database().ref('messages');<br />
+<br />
+// Listen for form submit<br />
+document.getElementById('myForm').addEventListener('submit', submitForm);<br />
+<br />
+// Submit form<br />
+function submitForm(e){<br />
+e.preventDefault();<br />
+<br />
+// Get values<br />
+var name = getInputVal('name');<br />
+var email = getInputVal('email');<br />
+var message = getInputVal('message');<br />
+<br />
+// Save message<br />
+saveMessage(name, email, message);<br />
+<br />
+// Show alert<br />
+document.querySelector('.alert').style.display = 'block';<br />
+<br />
+// Hide alert after 3 seconds<br />
+setTimeout(function(){<br />
+document.querySelector('.alert').style.display = 'none';<br />
+},3000);<br />
+<br />
+// Clear form<br />
+document.getElementById('myForm').reset();<br />
+}<br />
+<br />
+// Function to get get form values<br />
+function getInputVal(id){<br />
+return document.getElementById(id).value;<br />
+}<br />
+<br />
+// Save message to firebase<br />
+function saveMessage(name, email, message){<br />
+var newMessageRef = messagesRef.push();<br />
+newMessageRef.set({<br />
+name: name,<br />
+email:email,<br />
+message:message<br />
+});<br />
+}<br />
 </div>        </div>
     </div>
 
@@ -312,85 +311,85 @@ body{padding-top:50px; line-height:2 !important;}#navbar-domain{color:white;font
     
         <div class="panel-heading non-overflow-div"><br />
            <div class="htmlHigh notranslate example-line-height">
-            html body {<br />
-                background:url(&quot;https://picsum.photos/2500/1500?image=1041&quot;) no-repeat center center fixed;<br />
-                 -webkit-background-size:cover;<br />
-                 -moz-background-size:cover;<br />
-                 -o-background-size:cover;<br />
-                 background-size:cover;<br />
-           }<br />
-           <br />
-           #myForm {<br />
-             background: rgba(255,255,255,.2);<br />
-             border: 1px solid #242424;<br />
-             border-radius: 10px;<br />
-             max-width: 400px;<br />
-             -webkit-box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);<br />
-             -moz-box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);<br />
-             box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);<br />
-             font-family: 'Open Sans', sans-serif;<br />
-             color: #fff;<br />
-             margin: 0 auto;<br />
-           }<br />
-           <br />
-           .myList li {<br />
-             list-style: none;<br />
-             padding: 2% 0;<br />
-             margin: 0 -10px;<br />
-           }<br />
-           <br />
-           h1 {<br />
-             font-size: 2em;<br />
-             text-align: center;<br />
-           }<br />
-           #name, #email, #message {<br />
-             background: rgba(0,0,0,.2);<br />
-             width: 340px;<br />
-             height: 30px;<br />
-             -webkit-box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);<br />
-             -moz-box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);<br />
-             box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);<br />
-             border: 1px solid #fff;<br />
-             border-radius: 3px;<br />
-           }<br />
-           <br />
-           ::-webkit-input-placeholder {<br />
-             font-family: 'Open Sans', sans-serif;<br />
-             padding-left: 5px;<br />
-             color: #fff;<br />
-           }<br />
-           <br />
-           :-moz-placeholder { <br />
-             font-family: 'Open Sans', sans-serif;<br />
-             padding-left: 5px;<br />
-             color: #fff;<br />
-           }<br />
-           <br />
-           ::-moz-placeholder {<br />
-             font-family: 'Open Sans', sans-serif;  <br />
-             padding-left: 5px;<br />
-             color: #fff;<br />
-           }<br />
-           <br />
-           :-ms-input-placeholder { <br />
-             font-family: 'Open Sans', sans-serif;<br />
-             padding-left: 5px;<br />
-             color: #fff;<br />
-           }<br />
-           <br />
-           #message {<br />
-             width: 338px;<br />
-             height: 100px;<br />
-           }<br />
-           <br />
-           #submit {<br />
-             width: 343px;<br />
-             height: 40px;<br />
-           }<br />
-           <br />
-           label {<br />
-             font-weight: bold;<br />
-           }<br />
+html body {<br />
+background:url(&quot;https://picsum.photos/2500/1500?image=1041&quot;) no-repeat center center fixed;<br />
+-webkit-background-size:cover;<br />
+-moz-background-size:cover;<br />
+-o-background-size:cover;<br />
+background-size:cover;<br />
+}<br />
+<br />
+#myForm {<br />
+background: rgba(255,255,255,.2);<br />
+border: 1px solid #242424;<br />
+border-radius: 10px;<br />
+max-width: 400px;<br />
+-webkit-box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);<br />
+-moz-box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);<br />
+box-shadow:-1px 0px 10px 0px rgba(50, 50, 50, 0.86);<br />
+font-family: 'Open Sans', sans-serif;<br />
+color: #fff;<br />
+margin: 0 auto;<br />
+}<br />
+<br />
+.myList li {<br />
+list-style: none;<br />
+padding: 2% 0;<br />
+margin: 0 -10px;<br />
+}<br />
+<br />
+h1 {<br />
+font-size: 2em;<br />
+text-align: center;<br />
+}<br />
+#name, #email, #message {<br />
+background: rgba(0,0,0,.2);<br />
+width: 340px;<br />
+height: 30px;<br />
+-webkit-box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);<br />
+-moz-box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);<br />
+box-shadow: inset 1px 0px 10px 2px rgba(50, 50, 50, 0.27);<br />
+border: 1px solid #fff;<br />
+border-radius: 3px;<br />
+}<br />
+<br />
+::-webkit-input-placeholder {<br />
+font-family: 'Open Sans', sans-serif;<br />
+padding-left: 5px;<br />
+color: #fff;<br />
+}<br />
+<br />
+:-moz-placeholder { <br />
+font-family: 'Open Sans', sans-serif;<br />
+padding-left: 5px;<br />
+color: #fff;<br />
+}<br />
+<br />
+::-moz-placeholder {<br />
+font-family: 'Open Sans', sans-serif;  <br />
+padding-left: 5px;<br />
+color: #fff;<br />
+}<br />
+<br />
+:-ms-input-placeholder { <br />
+font-family: 'Open Sans', sans-serif;<br />
+padding-left: 5px;<br />
+color: #fff;<br />
+}<br />
+<br />
+#message {<br />
+width: 338px;<br />
+height: 100px;<br />
+}<br />
+<br />
+#submit {<br />
+width: 343px;<br />
+height: 40px;<br />
+}<br />
+<br />
+label {<br />
+font-weight: bold;<br />
+}<br />
 </div>        </div>
     </div>
 
